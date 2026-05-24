@@ -1,0 +1,1 @@
+ - ideas should have optional location information (country, region, or something like this) to simplify its discovery
