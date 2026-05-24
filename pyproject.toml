@@ -1,0 +1,19 @@
+[project]
+name = "vaalbara"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "litestar[standard,sqlalchemy]",
+    "sqlalchemy[asyncio]>=2.0",
+    "asyncpg",
+    "alembic",
+    "pydantic-settings",
+    "httpx",
+    "pyjwt",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
