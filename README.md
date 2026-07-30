@@ -1,7 +1,11 @@
 # Vaalbara
 
-Web platform for creating local events and validating ideas through community voting.
+A web platform for creating local events and bringing ideas to life through community collaboration.
+People can share ideas, gather support through voting, and connect with strangers who genuinely want to join
+and help create something exciting together — making it possible to build real projects and communities even without an existing network or team.
 
+
+User MUST be a real person so system verifies user by phone number,
 ## Documentation
 
 - [Project Brief](docs/project-brief.md) — concept overview and key features

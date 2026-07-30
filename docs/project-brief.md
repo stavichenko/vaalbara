@@ -2,14 +2,16 @@
 
 ## Concept
 
-Vaalbara is a community platform that bridges the gap between spontaneous ideas and real-world events. Users can propose ideas to gauge interest, collect votes, and — when confidence is high enough — convert a validated idea into a location-bound event that others can join.
+Vaalbara is a community platform that bridges the gap between spontaneous ideas and real-world events.
+Users can propose ideas to gauge interest, collect votes,
+and — when confidence is high enough — convert a validated idea into a location-bound event that others can join.
 
 ## Core Entities
 
 ### Idea
 A lightweight proposal that a user puts forward to test its relevance with the community.
 
-- Not tied to a location (global audience)
+- Optionally tied to a location (global audience)
 - Other users vote (like) to signal interest
 - The author decides when enough votes justify moving forward
 - Can be converted into an Event by the author
