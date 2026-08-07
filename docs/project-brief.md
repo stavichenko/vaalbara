@@ -12,12 +12,12 @@ and — when confidence is high enough — convert a validated idea into a locat
 A lightweight proposal that a user puts forward to test its relevance with the community.
 
 - Optionally tied to a location (global audience)
-- Other users vote (like) to signal interest
-- The author decides when enough votes justify moving forward
+- Other users endorse to signal interest
+- The author decides when it's enough votes for moving forward
 - Can be converted into an Event by the author
 
 ### Event (Initiative)
-A concrete, location-bound happening that users can sign up to attend.
+A concrete happening that users can sign up to attend.
 
 **Lifecycle stages:**
 1. **Draft** — being prepared by the organizer
@@ -46,11 +46,68 @@ Both Ideas and Events are tagged. Users subscribe to tags they care about and re
 ## Users
 
 - **Regular user** — browses, votes on ideas, joins events
-- **Organizer** — creates ideas and events, manages their own initiatives
-- **Manager** — assigned to run an event on behalf of the organizer
+- **Moderator** — handles subtle situations on the platform
 
 ## Tech Notes
 
 - PostgreSQL with PostGIS for geographic queries
 - UUIDs as primary keys throughout
 - Phone and email verified separately; unique nicknames
+
+
+когда пользователь заходит в сиситему он ДОЛЖЕН проголосовать за 3 идеи и просмотреть 3 инициативы
+2 поблизости от него и 1 и совпадающую по тэгам соответственно
+если людей не заставлять смотреть чужие идеи ничего не будет работать
+
+нужен ии асистент чтобы не пропускать всякое экстремистсткое говно
+
+пользователь без подтвержденного телефона не может принимать участие в инициативах
+а создавать идеи может
+
+продумать механику взаимодействия пользователей подписавшихся на инициативу
+
+
+
+
+RU
+Ты здесь, значит ты знаешь - Один в поле не воин.
+Я Vaalbara. Мои алгоритмы помогут тебе найти единомышленников,
+людей которые готовы воплощать твою идею в жизнь вместе с тобой.
+
+
+У меня есть видение,               частично есть план              есть идея но я не уверен 
+план действий и понимаение,        задумка еще формируется         может ли это
+какие ресурсы потребуются          есть над чем подумать           быть еще кому-то инетерсно
+
+Как это работает
+Ты делишься идеей, которая требует участия други людей, 
+-> другие люди узнают в ней свою и оставляют знаки поддержки (endorsementы)
+-> когда ты видишь что достаточное количество людей поддержало идею, ты трансформируешь её в инициативу
+-> все кто поддержали идею получат уведомление о том что она готова превратиться в действие и смогут пресоединиться к инициативе
+-> когда комманда собрана лидер инициативы переводит её в состояние "сформирована"
+-> все участники инициативы видят контактные данные друг друга и могут продолжить координацию за пределами платформы,
+мне лиш остаётся пожелать вам удачи и надеяться что вы вернетесь чтобы рассказать о том чего вы смогли добиться вместе
+чтобы воодушевить других.
+
+Ты можешь разрешить или запретить:
+видеть свои контактные данные
+оставлять вопросы и комментарии
+
+
+Есть приложение которое поможет тебе следить за своими идеями и инициативами и ничего не пропустить
+Оно не даёт возможности присоединяться к новым 2И или создавать их.
+
+
+
+
+EN
+You are here, so you know - No man is an island
+I am Vaalbara. I will help you find like-minded people to bring your boldest ideas and visions to life.
+
+UA
+Ти тут, отже ти знаешь - Де дружно, там і хлібно
+Я Vaalbara. Я допоможу тобі знайти однодумців для втілення твоїх найсміливіших ідей та задумів.
+
+PL
+Jesteś tutaj, więc wiesz — To, co wielkie, rodzi się między ludźmi
+Jestem Vaalbara. Pomogę Ci znaleźć ludzi, którzy podzielają Twoją wizję, aby urzeczywistnić Twoje najśmielsze pomysły i marzenia.
