@@ -11,48 +11,43 @@ and — when confidence is high enough — convert a validated idea into a locat
 ### Idea
 A lightweight proposal that a user puts forward to test its relevance with the community.
 
-- Optionally tied to a location (global audience)
+- Optionally tied to a location (сan target the global audience also)
 - Other users endorse to signal interest
 - The author decides when it's enough votes for moving forward
-- Can be converted into an Event by the author
+- Can be converted into an Initiative by the author
 
-### Event (Initiative)
-A concrete happening that users can sign up to attend.
+### Initiative (Event or regular activity)
+A concrete happening that users can sign up to attend or perform on a regular basis.
 
 **Lifecycle stages:**
 1. **Draft** — being prepared by the organizer
 2. **Open** — accepting participants
-3. **In Progress** — currently happening
+3. **Ready** — currently happening
 4. **Completed** — finished
 5. **Cancelled** — called off
 
-Each event has an organizer (creator) and optionally a separate manager. Participants join with a specific role.
+Each initiative has an organizer (creator) and optionally a separate manager. Participants join with a specific role.
 
 ### Tags
-Both Ideas and Events are tagged. Users subscribe to tags they care about and receive notifications when new Ideas or Events matching those tags are created or updated.
+Both Ideas and Initiatives are tagged. Users subscribe to tags they care about and receive notifications
+when new Ideas or Initiatives matching those tags are created or updated.
 
 ## Key Features
 
-| Feature | Description |
-|---|---|
-| Idea validation | Post an idea, collect community votes, decide if it's worth running |
-| Idea → Event conversion | One-click promotion of a validated idea into a full event |
-| Location-aware events | Events are pinned to a geographic point; browse what's near you |
-| Participant management | Users join events with defined roles |
-| Tag subscriptions | Follow topics and get notified about matching ideas and events |
-| Karma system | Users accumulate karma through contributions on the platform |
-| Author as manager | Idea creator can choose to manage the resulting event themselves |
+| Feature | Description                                                                        |
+|---|------------------------------------------------------------------------------------|
+| Idea validation | Post an idea, collect community endorsements, decide if it's worth running         |
+| Idea → Initiative conversion | One-click promotion of a validated idea into a full event                          |
+| Location-aware events | Initiatives are pinned to a geographic point (at least a ); browse what's near you |
+| Participant management | Users join events with defined roles                                               |
+| Tag subscriptions | Follow topics and get notified about matching ideas and events                     |
+| Karma system | Users accumulate karma through contributions on the platform                       |
+| Author as manager | Idea creator can choose to manage the resulting event themselves                   |
 
 ## Users
 
-- **Regular user** — browses, votes on ideas, joins events
+- **Regular user** — browses, endorses on ideas, joins events
 - **Moderator** — handles subtle situations on the platform
-
-## Tech Notes
-
-- PostgreSQL with PostGIS for geographic queries
-- UUIDs as primary keys throughout
-- Phone and email verified separately; unique nicknames
 
 
 когда пользователь заходит в сиситему он ДОЛЖЕН проголосовать за 3 идеи и просмотреть 3 инициативы

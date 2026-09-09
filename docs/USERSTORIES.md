@@ -14,17 +14,17 @@
 - get 2i similar to <str> in area (search for concrete things)
 - user can CRUD Area(polygon) of interest
 - user can CRUD Idea/Initiative
-- get ideas user voted for
+- get ideas user endorsed for
 - get initiatives user commited for
 
 ### Create
 
 - Idea
- - CRUD
- - vote/unvote
+ - CR(!U)D (NO update after first endorsement)
+ - endorse/remove previously left endorsement
 - Initiative
-  - CR(!U)D (NO update)
+  - CR(!U)D (NO update after first endorsement)
   - Create Amend(separate entity)
-- Amend
-  - CR(!U)D (NO update)
+- Patch
+  - CR(!U)D (NO update after first endorsement)
 

@@ -2,7 +2,8 @@
 
 A web platform for creating local events and bringing ideas to life through community collaboration.
 People can share ideas, gather support through voting, and connect with strangers who genuinely want to join
-and help create something exciting together — making it possible to build real projects and communities even without an existing network or team.
+and help create something exciting together — making it possible to build real projects and communities
+even without an existing network or team.
 
 
 User MUST be a real person so system verifies user by phone number,
